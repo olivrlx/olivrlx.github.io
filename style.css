@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    padding: 15px 10px;
+    background: url('images_site/banner-image.jpg') center/cover no-repeat;
+    background-position: center;
+    background-size: cover; 
+    color: rgb(0, 0, 0); 
+    padding: 20px; 
+    text-align: center; 
+
+}
+
+.logo h1 {
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: 'Joan', sans-serif;
+    text-align: left;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 2px;
+    font-family: 'Joan', sans-serif;
+    text-align:left ;
+}
+
+/* Barre de navigation */
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #3f3e3e;
+}
+
+.search-bar {
+    padding: 5px;
+    margin-right: 40px;
+    border: 1px solid #888787;
+    border-radius: 10px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.flag-image {
+    width: 20px;
+    height: auto;
+}
+
+/* Bannière principale avec un arrière-plan */
+.header-banner {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px 10px;
+    background: url('images_site/experience-background.jpg') center/cover no-repeat;
+    background-size: cover; 
+}
+
+/* Cadre UNE EXPÉRIENCE NUMÉRIQUE UNIQUE */
+.experience-numerique {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience-image {
+    width: 2000px;
+    height: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-position: center;
+    opacity: 80%;
+}
+.experience-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align:center;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+}
+.experience-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.view-art-button {
+    position:absolute;
+    top: 500px;
+    left: 43%;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.view-art-button:hover {
+    background-color: #e0e0e0;
+}
+.petits {
+ font-size: 20px;
+ color:#000000;
+ text-align: center;
+ margin-top: -40px;
+ border-radius: 40%;
+}
+
+/* Journal et Favorites */
+.journal, .favorites {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.journal h2, .favorites h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Joan', sans-serif;
+}
+
+.journal-items, .favorites-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.journal-item img, .favorite-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.journal-item p, .favorite-item p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #555;
+    font-family: 'Post No Bills Jaffna', sans-serif; 
+    text-align: left;
+}
+.journal-item p strong {
+    font-weight: bold; 
+    color: #000000;
+}
+.favorite-item p strong {
+    font-weight: bold; 
+    color: #000000; 
+}
+button.prev, button.next {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1560px;
+    color: black;
+}
+button.prev {
+    left: 60px; /* Positionne la flèche gauche plus loin des œuvres */
+}
+
+button.next {
+    right: 80px; /* Positionne la flèche droite plus loin des œuvres */
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+.contact, .map {
+    width: 48%;
+    font-family: 'Post No Bills Jaffna', sans-serif; 
+}
+
+.contact h3 {
+    font-size: 40px;
+    font-family: 'Post No Bills Jaffna', sans-serif; 
+    text-align: center;
+}
+
+.contact address {
+    font-style: normal;
+    font-family: 'Post No Bills Jaffna', sans-serif; 
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact strong{
+    font-size: 20px;
+}
+
+.social-media img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.map {
+    position: relative;
+}
+
+.map img {
+    width: 100%; /* Assurez-vous que l'image prend toute la largeur de la div */
+    height: auto; /* Ajuste la hauteur en fonction de la largeur */
+}
+
+.location-icon {
+    position:absolute;
+    margin-top: 122px;
+    left: 61%;
+    padding: 10px 20px;
+    font-size: 24px; /* Taille de l'icône */
+    color: #e32400; /* Couleur rouge de l'icône */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-nav {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-banner h2 {
+        font-size: 28px;
+    }
+
+    .view-art-button {
+        font-size: 14px;
+    }
+
+    .journal-items, .favorites-items {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact, .map {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
