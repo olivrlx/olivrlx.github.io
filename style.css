@@ -43,7 +43,6 @@ header {
     text-align:left ;
 }
 
-/* Barre de navigation */
 .header-nav {
     display: flex;
     align-items: center;
@@ -78,7 +77,6 @@ header {
     height: auto;
 }
 
-/* Bannière principale avec un arrière-plan */
 .header-banner {
     display: flex;
     justify-content:center;
@@ -88,7 +86,6 @@ header {
     background-size: cover; 
 }
 
-/* Cadre UNE EXPÉRIENCE NUMÉRIQUE UNIQUE */
 .experience-numerique {
     position: relative;
     text-align: center;
@@ -147,7 +144,6 @@ header {
  border-radius: 40%;
 }
 
-/* Journal et Favorites */
 .journal, .favorites {
     text-align: center;
     padding: 40px 0;
@@ -196,13 +192,12 @@ button.prev, button.next {
     color: black;
 }
 button.prev {
-    left: 60px; /* Positionne la flèche gauche plus loin des œuvres */
+    left: 60px; 
 }
 
 button.next {
-    right: 80px; /* Positionne la flèche droite plus loin des œuvres */
+    right: 80px; 
 }
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -242,8 +237,8 @@ footer {
 }
 
 .map img {
-    width: 100%; /* Assurez-vous que l'image prend toute la largeur de la div */
-    height: auto; /* Ajuste la hauteur en fonction de la largeur */
+    width: 100%; 
+    height: auto; 
 }
 
 .location-icon {
@@ -251,10 +246,10 @@ footer {
     margin-top: 122px;
     left: 61%;
     padding: 10px 20px;
-    font-size: 24px; /* Taille de l'icône */
-    color: #e32400; /* Couleur rouge de l'icône */
+    font-size: 24px; 
+    color: #e32400; 
 }
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .header-top {
         flex-direction: column;
